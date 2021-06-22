@@ -35,7 +35,8 @@ Pod::Spec.new do |s|
    s.resource_bundles = {
      'PPBaseUI' => ['PPBaseUI/Assets/headerImg/*.png']
    }
-
+  #找不到头文件的话直接把.framework工程拖进 Example工程的header searchPath里
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
